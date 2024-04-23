@@ -101,21 +101,3 @@ def func8():
 
 # func8()
 
-def find_prime(n):
-    a = []
-    i = 2
-    while True:
-        if n % i == 0 :
-            n = n//i
-            a.append(i)
-            print(i)
-            i = 2
-        elif n % i != 0:
-            if n // i == 0:
-                break
-            else:
-                i += 1
-
-    # print(a)
-
-find_prime(int(input("값을 입력하세요 : ")))
