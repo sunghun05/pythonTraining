@@ -1,7 +1,6 @@
 def mul(num, row):
     loop = 1
     for i in range(1, num+1):
-        # print(" {:=^9}".format(str(i)+'단'), end='      ')
         if (i % (row) == 0 or (i == num)):
             print('')
             for j in range(1, 10):
@@ -11,22 +10,31 @@ def mul(num, row):
             print('')
             loop += row
 def enter():
+
     while True:
 
         n = (input("Enter a number : "))
-        if n <= 1 :
-            print("2보다 큰 단수를 입력하세요.")
-            continue
-        elif n >= 100 :
-            print("100보다 작은 수를 입력하세요.")
+
+        try:
+            if int(n) <= 1 :
+                print("2보다 큰 단수를 입력하세요.")
+                continue
+            elif int(n) >= 100 :
+                print("100보다 작은 수를 입력하세요.")
+                continue
+        except ValueError:
+            print("Invalid number, Try again.")
             continue
 
-        r = int(input("Enter a row : "))
+        r = (input("Enter a row : "))
 
-        if r < 1:
-            print("행은 1보다 커야 합니다.")
-        elif r > n :
-            print("입력한 수보다 많은 행을 출력할 수 없습니다.")
-        else:
-            return n, r
-            break
+        try:
+            if int(r) < 1:
+                print("행은 1보다 커야 합니다.")
+            elif int(r) > int(n) :
+                print("입력한 수보다 많은 행을 출력할 수 없습니다.")
+            else:
+                return int(n), int(r)
+                break
+        except ValueError:
+            print("Invalid number, Try again.")
