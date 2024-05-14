@@ -1,48 +1,59 @@
+
+"""
+
+함수 실행 주석을 풀어서 사용하세요..
+
+"""
+
+
+
 #실습과제 1
 
-# def enterInt(data):
-#     li.append(data)
-#     print(li, end="")
-#     print("avg = ", sum(li) / len(li))
-# def removeLa():
-#     del li[len(li)-1]
-#     print(li, end="")
-#     print("avg = ", sum(li)/len(li))
-# def menu():
-#     set = input("명령어를 입력하세요 : ")
-#     if set == "삽입":
-#         enterInt(int(input("데이터를 입력하세요 : ")))
-#         menu()
-#     elif set == "삭제":
-#         removeLa()
-#         menu()
-#     else:
-#         print("명령어 오류")
-#         menu()
-# li = []
+def enterInt(data):
+    li.append(data)
+    print(li, end="")
+    print("avg = ", sum(li) / len(li))
+def removeLa():
+    del li[len(li)-1]
+    print(li, end="")
+    print("avg = ", sum(li)/len(li))
+def menu():
+    set = input("명령어를 입력하세요 : ")
+    if set == "삽입":
+        enterInt(int(input("데이터를 입력하세요 : ")))
+        menu()
+    elif set == "삭제":
+        removeLa()
+        menu()
+    else:
+        print("명령어 오류")
+        menu()
+li = []
 # menu()
 
 
-#실습 문제 2
-# sc = []
-# a=0
-# for i in range(5):
-#     sc.append(int(input("성적을 입력하세요 : ")))
-# av = sum(sc) / len(sc)
-# ma = max(sc)
-# mi = min(sc)
-# for i in range(len(sc)):
-#     if sc[i] >= 90:
-#         a += 1
-# print(sc)
-# print("평균 : {}".format(av))
-# print("최고 점수 : {}".format(ma))
-# print("최저 점수 : {}".format(mi))
-# print("90 점 이상 학생 {}명".format(a))
+# 실습 문제 2
+def func2():
+    sc = []
+    a=0
+    for i in range(5):
+        sc.append(int(input("성적을 입력하세요 : ")))
+    av = sum(sc) / len(sc)
+    ma = max(sc)
+    mi = min(sc)
+    for i in range(len(sc)):
+        if sc[i] >= 90:
+            a += 1
+    print(sc)
+    print("평균 : {}".format(av))
+    print("최고 점수 : {}".format(ma))
+    print("최저 점수 : {}".format(mi))
+    print("90 점 이상 학생 {}명".format(a))
+# func2()
 
-#실습문제 3
-# row = []
-# data = []
+# 실습문제 3
+row = []
+data = []
 def score():
     global row
     global data
@@ -88,4 +99,4 @@ def summ():
         print(c)
         a.insert(i+1, c)
     print(a)
-summ()
+# summ()

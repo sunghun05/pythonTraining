@@ -26,6 +26,7 @@ def func3():
         for j in range(1, 10):
             print("{} * {} = {}".format(i, j, (i)*j))
         print("")
+# func3()
 
 #실습문제 4
 
@@ -40,7 +41,7 @@ def func4(a, w):
         for j in range(a,0, -2):
             print(" " * ((a - j) // 2), end="")
             print("{}". format(w)*j)
-func4(int(input("enter your number : ")), input("enter your character : "))
+# func4(int(input("enter your number : ")), input("enter your character : "))
 
 #실습문제 5
 def fac(a):
