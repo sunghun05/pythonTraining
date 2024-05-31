@@ -134,15 +134,16 @@ def decide_score(avg_score):
     else:
         return 'F'
 
-pyth_list = []
-data_list = []
-comp_list = []
-tot_list = []
-score_list = []
-st_num = 5
+# pyth_list = []
+# data_list = []
+# comp_list = []
+# tot_list = []
+# score_list = []
+# st_num = 5
 
-for i in range(st_num):
-    print("===%d번 학생 점수 입력===" % (i+1))
-    read_data(pyth_list, data_list, comp_list)
-compute_data(pyth_list, data_list, comp_list, tot_list, score_list, st_num)
-print_data(pyth_list, data_list, comp_list, tot_list, score_list, st_num)
+# for i in range(st_num):
+#     print("===%d번 학생 점수 입력===" % (i+1))
+#     read_data(pyth_list, data_list, comp_list)
+# compute_data(pyth_list, data_list, comp_list, tot_list, score_list, st_num)
+# print_data(pyth_list, data_list, comp_list, tot_list, score_list, st_num)
+
