@@ -164,3 +164,7 @@ a.spDown(100)
 a.spDown(200)
 # print(a)
 
+a = {1,2,3}
+print(type(a))
+print(a)
+
