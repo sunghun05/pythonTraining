@@ -24,7 +24,7 @@ def preprocessing():
 
             #print(sum_dic[line[i][0]])
         # print(sum_dic)
-        print(stu_dic)
+        #print(stu_dic)
         #print(dict(sorted(stu_dic.items(), key=lambda x: x[1][4], reverse=True)))
 
     a = open('A.txt', 'w')
@@ -127,7 +127,7 @@ def preprocessing():
         n2s.append(n2l[j][2])
         n3s.append(n3l[j][2])
         n4s.append(n4l[j][2])
-    print(n0s)
+    #print(n0s)
     n0Max = max(n0s)
     n0Min = min(n0s)
     # print(n0Min)
@@ -174,7 +174,17 @@ def preprocessing():
             n23.write(str(n3l[j])+'\n')
         if n4Min == n4l[j][2]:
             n24.write(str(n4l[j])+'\n')
-
+    a.close()
+    b.close()
+    c.close()
+    d.close()
+    asc.close()
+    desc.close()
+    n20.close()
+    n21.close()
+    n22.close()
+    n23.close()
+    n24.close()
 
 def search() :
     global stu_dic
